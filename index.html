@@ -18,7 +18,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand" href="#page-top"><h1 id="header">???</h1></a>
+          <a class="navbar-brand" href="#page-top" id="titoloAltoSx">???</a>
           <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
               <i class="fas fa-bars"></i>
@@ -35,6 +35,7 @@
   </nav>
 
  <section class="page-section bg-primary"> 
+  <h1 id="header">???ù</h1>
   <div class="container">
     <h5>Trending</h5>
     <div class="card-group">
@@ -177,13 +178,19 @@
 
 </section>
 
+<h1 id="header"> qwerty </h1>
+
+<ul id="trending-movies-list">
+
+</ul>
+
 </body>
 
 <script type="module">
   import { getTrendingMovie, getTrending } from "./js/api/trendingGetters.js";
-  import { fixTitle } from "./js/index.js";
-  import { createTrendingMoviesList } from './js/domManipulator/create.List.js'
-  fixTitle();
+  import { fixTitle } from "./js/utils/dom.js";
+  import { createTrendingMoviesList } from './js/domManipulator/createList.js'
+  fixTitle();  
 
   const trendingMovie = await getTrendingMovie();
   createTrendingMoviesList(trendingMovie);

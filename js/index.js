@@ -1,6 +1,6 @@
 import { getTrending, getTrendingMovie, getTrendingSeries, searchPerson } from "./api/trendingGetters.js";
 // export { BASE_URL, OPTIONS } from ".api/config.js"
-export { fixTitle } from "./utils/dom.js"
+export { fixTitle, titolo } from "./utils/dom.js"
 //richiamo della funzione
 /** getTrending().then(data => {
 

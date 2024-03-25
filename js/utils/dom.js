@@ -1,7 +1,7 @@
 // funzione che al caricamento dell pagina verifichi che il titolo sia corretto, in caso lo corregge
 export const fixTitle = () => {
     
-    // tag h1 che contiene il titolo
+    // tag a che contiene il titolo
     const title = document.getElementById("header");
 
     // stringa che c'è scritto dentro al tag
